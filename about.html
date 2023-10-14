@@ -98,6 +98,56 @@
         .deskripsi .deskripsi-isi {
             text-indent: 20px;
         }
+
+        @media (max-width: 769px) {
+            nav {
+                background-color: #E74646;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                height: 50px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                width: 40%;
+                gap: 5%;
+                margin: auto;
+            }
+
+            li a {
+                color: wheat;
+                font-size: xx-large;
+                touch-action: none;
+            }
+
+            a h1 {
+                display: none;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30vh;
+                /* Menggunakan tinggi viewport untuk div tengah di tengah halaman. */
+                margin: 5% auto;
+            }
+
+            .content {
+                width: 80%;
+                margin: 3% auto;
+            }
+
+            .deskripsi .deskripsi-isi {
+                text-indent: 20px;
+                font-size: 1.5em;
+                text-align: justify;
+            }
+        }
     </style>
 
 </head>
@@ -105,7 +155,9 @@
 <body>
 
     <nav>
-        <a href="index.html"><h1>Cangcorangsz</h1></a>
+        <a href="index.html">
+            <h1>Cangcorangsz</h1>
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
@@ -122,7 +174,9 @@
 
         <div class="deskripsi">
             <div class="judul">Nice To Meet You</div>
-            <div class="deskripsi-isi">Hi, I'm Dimas Bajuri. A Junior web developer, i was born on march 2006. I'm interested in programming since elementery school, it looks fun when I can make some cool things with computer. and I hope I can get a job before get into Univerity</div>
+            <div class="deskripsi-isi">Hi, I'm Dimas Bajuri. A Junior web developer, i was born on march 2006. I'm
+                interested in programming since elementery school, it looks fun when I can make some cool things with
+                computer. and I hope I can get a job before get into Univerity</div>
         </div>
     </div>
     <script>

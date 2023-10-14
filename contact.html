@@ -70,7 +70,7 @@
             text-align: center;
             font-size: 2em;
         }
-        
+
         .judul {
             margin: 5% auto;
         }
@@ -78,6 +78,40 @@
         a:hover {
             color: #E74646;
         }
+
+        @media (max-width: 769px) {
+            nav {
+                background-color: #E74646;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                height: 50px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                width: 40%;
+                gap: 5%;
+                margin: auto;
+            }
+
+            li a {
+                color: wheat;
+                font-size: xx-large;
+                touch-action: none;
+            }
+
+            a h1 {
+                display: none;
+            }
+        }
+
+        /* @media (max-width: 376px) {
+
+        } */
     </style>
 </head>
 
@@ -98,8 +132,10 @@
         <div class="judul">My Contact</div>
         <div class="github"><a target="_blank" href="https://github.com/Cangcorangsz">Github</a></div>
         <div class="whatsapp"><a target="_blank" href="https://wa.me/085796463352">Whatsapp</a></div>
-        <div class="ig"><a target="_blank" href="https://instagram.com/cangcorangsz?igshid=MzRlODBiNWFlZA==">Instagram</a></div>
-        <div class="x"><a target="_blank" href="https://x.com/dddimasriz?t=lgAU9yEwQsTUd25nlfbq2w&s=08">X (Twitter)</a></div>
+        <div class="ig"><a target="_blank"
+                href="https://instagram.com/cangcorangsz?igshid=MzRlODBiNWFlZA==">Instagram</a></div>
+        <div class="x"><a target="_blank" href="https://x.com/dddimasriz?t=lgAU9yEwQsTUd25nlfbq2w&s=08">X (Twitter)</a>
+        </div>
     </div>
 </body>
 

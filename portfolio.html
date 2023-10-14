@@ -73,12 +73,55 @@
         .project img {
             width: 60%;
         }
+
+        @media (max-width: 769px) {
+            nav {
+                background-color: #E74646;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 10px 0;
+                height: 50px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                width: 40%;
+                gap: 5%;
+                margin: auto;
+            }
+
+            li a {
+                color: wheat;
+                font-size: xx-large;
+                touch-action: none;
+            }
+
+            a h1 {
+                display: none;
+            }
+
+            .display section {
+                margin: 2%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 10%;
+            }
+
+            .judul {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <a href="index.html"><h1>Cangcorangsz</h1></a>
+        <a href="index.html">
+            <h1>Cangcorangsz</h1>
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
