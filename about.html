@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Oswald&family=Poppins&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <!-- fonts:
+    font-family: 'Courgette', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive; -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #FFF3E2;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* NAVBAR START */
+
+        nav {
+            background-color: #E74646;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            height: 50px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li a {
+            color: wheat;
+            font-size: x-large;
+        }
+
+        li a:hover {
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 25% 0 0;
+            font-family: 'Satisfy', cursive;
+            color: #FFE5CA;
+        }
+
+        /* NAVBAR END */
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45vh;
+            /* Menggunakan tinggi viewport untuk div tengah di tengah halaman. */
+            margin: 5% auto;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            /* Untuk memastikan gambar tidak melebihi lebar kontainer. */
+            max-height: 100%;
+            /* Untuk memastikan gambar tidak melebihi tinggi kontainer. */
+            border-radius: 50%;
+        }
+
+        .content {
+            width: 40%;
+            margin: 3% auto;
+        }
+
+        .deskripsi .judul {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Courgette', cursive;
+            color: #FA9884;
+            text-align: center;
+            margin: 3%;
+        }
+
+        .deskripsi .deskripsi-isi {
+            text-indent: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"><h1>Cangcorangsz</h1></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="image-container">
+            <img src="public/image/profile.jpg" alt="Profil">
+        </div>
+
+        <div class="deskripsi">
+            <div class="judul">Nice To Meet You</div>
+            <div class="deskripsi-isi">Hi, I'm Dimas Bajuri. A Junior web developer, i was born on march 2006. I'm interested in programming since elementery school, it looks fun when I can make some cool things with computer. and I hope I can get a job before get into Univerity</div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

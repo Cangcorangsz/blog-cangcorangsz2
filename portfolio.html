@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Oswald&family=Poppins&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #FFF3E2;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* NAVBAR START */
+
+        nav {
+            background-color: #E74646;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            height: 50px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li a {
+            color: wheat;
+            font-size: x-large;
+        }
+
+        li a:hover {
+            color: white;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0 25% 0 0;
+            font-family: 'Satisfy', cursive;
+            color: #FFE5CA;
+        }
+
+        /* NAVBAR END */
+
+        .display-container {
+            margin: 5% auto;
+            text-align: center;
+        }
+
+        .display section {
+            margin: 2%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10%;
+        }
+
+        .project img {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><h1>Cangcorangsz</h1></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="display-container">
+            <div class="judul">Recent Projects</div>
+            <div class="display">
+                <section>
+                    <div class="project 1">
+                        <h2>Drum Kit</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/drum-kit/">
+                            <img src="public/image/1.jpeg" alt="Drumkit">
+                        </a>
+                    </div>
+                    <div class="project 2">
+                        <h2>Image Preview</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/photo-previewer/">
+                            <img src="public/image/2.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="project 3">
+                        <h2>Temperature Calculator</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/kalkulator-suhu/">
+                            <img src="public/image/3.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="project 4">
+                        <h2>To do List</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/todo-list/">
+                            <img src="public/image/4.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="project 5">
+                        <h2>Simple Calculator</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/simple-calculator/">
+                            <img src="public/image/5.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="project 5">
+                        <h2>Popular People Quotes</h2>
+                        <a target="_blank" href="https://cangcorangsz.github.io/popular-quotes/">
+                            <img src="public/image/6.jpeg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
