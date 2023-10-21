@@ -56,6 +56,11 @@
             color: #FFE5CA;
         }
 
+        .menu-toggle,
+        .display-toggle * {
+            display: none;
+        }
+
         /* NAVBAR END */
 
         .display-container {
@@ -114,6 +119,127 @@
                 font-size: 1.2em;
             }
         }
+
+        @media (max-width: 426px) {
+            .display-container {
+                margin: 5% auto;
+                text-align: center;
+            }
+
+            .display section {
+                margin: 2%;
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 1%;
+            }
+
+            .project img {
+                width: 80%;
+            }
+
+            .judul {
+                font-size: 200%;
+                margin: 10%;
+            }
+
+            /* Hamburger menu */
+            nav {
+                justify-content: space-between;
+            }
+
+            .menu-toggle {
+                display: flex;
+                flex-direction: column;
+                height: 20px;
+                justify-content: space-between;
+                position: relative;
+                margin-right: 4%;
+            }
+
+            .menu-toggle input {
+                position: absolute;
+                width: 40px;
+                height: 28px;
+                opacity: 1;
+                left: -5px;
+                top: -3px;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 2;
+            }
+
+            .menu-toggle span {
+                display: block;
+                width: 28px;
+                height: 3px;
+                background-color: whitesmoke;
+                border-radius: 3px;
+                transition: all 0.5s;
+            }
+
+            /* Hamburger Menu Animation */
+
+            .menu-toggle span:nth-child(2) {
+                transform-origin: 0 0;
+            }
+
+            .menu-toggle span:nth-child(4) {
+                transform-origin: 0 100%;
+            }
+
+            .menu-toggle input:checked~span:nth-child(2) {
+                /* background-color: white; */
+                transform: rotate(45deg) translate(-1px, -1px);
+            }
+
+            .menu-toggle input:checked~span:nth-child(4) {
+                /* background-color: white; */
+                transform: rotate(-45deg) translate(-1px, 0);
+            }
+
+            .menu-toggle input:checked~span:nth-child(3) {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            /* HUMBURGER MENU ANIMATION END */
+
+            nav ul {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 50%;
+                height: 100vh;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                z-index: 0;
+                background-color: #E74646;
+                transform: translateX(100%);
+                transition: all 1s;
+                opacity: 0;
+            }
+
+            nav ul.slide {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            .got-margin {
+                margin-top: 45%;
+            }
+
+            /* START LOGO */
+            a h1 {
+                display: contents;
+                font-size: 220%;
+            }
+
+            nav a {
+                margin-left: 5%;
+            }
+            /* END LOGO */
+        }
     </style>
 </head>
 
@@ -123,11 +249,18 @@
             <h1>Cangcorangsz</h1>
         </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="got-margin"><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <div class="content">
@@ -165,7 +298,7 @@
                             <img src="public/image/5.jpeg" alt="">
                         </a>
                     </div>
-                    <div class="project 5">
+                    <div class="project enam">
                         <h2>Popular People Quotes</h2>
                         <a target="_blank" href="https://cangcorangsz.github.io/popular-quotes/">
                             <img src="public/image/6.jpeg" alt="">
@@ -175,6 +308,15 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide')
+        });
+    </script>
 </body>
 
 </html>
